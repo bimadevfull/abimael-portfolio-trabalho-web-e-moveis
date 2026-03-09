@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#0b0f0c;
+color:white;
+line-height:1.6;
+transition:0.3s;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#0d1f12;
+position:sticky;
+top:0;
+}
+
+.logo{
+color:#2ecc71;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#2ecc71;
+}
+
+/* hero */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+animation:fade 1.5s;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#2ecc71;
+color:black;
+border-radius:6px;
+text-decoration:none;
+}
+
+/* sections */
+
+section{
+padding:70px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+/* grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* cards */
+
+.card{
+background:#13241a;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* form */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:5px;
+border:none;
+}
+
+button{
+padding:12px;
+border:none;
+background:#2ecc71;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+background:#0d1f12;
+}
+
+/* animação */
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* menu mobile */
+
+#menu-toggle{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+#menu-toggle span{
+height:3px;
+width:25px;
+background:white;
+margin:4px;
+}
+
+/* dark light */
+
+.light{
+background:white;
+color:black;
+}
+
+/* responsivo */
+
+@media(max-width:768px){
+
+nav{
+display:none;
+position:absolute;
+top:70px;
+right:0;
+background:#0d1f12;
+flex-direction:column;
+width:200px;
+padding:20px;
+}
+
+nav.active{
+display:flex;
+}
+
+#menu-toggle{
+display:flex;
+}
+
+}
