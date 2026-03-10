@@ -2,165 +2,362 @@
 <html lang="pt-br">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Abimael Dev | Portfólio</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abimael Dev | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursor-glow"></div>
 
-<header>
+    <header>
+        <a href="#" class="logo">
+            <span class="logo-icon">A</span>
+            <span class="logo-text">AbimaelDev</span>
+        </a>
 
-<h1 class="logo">AbimaelDev</h1>
+        <nav id="menu">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#formacao" class="nav-link">Formação</a>
+            <a href="#portfolio" class="nav-link">Portfólio</a>
+            <a href="#contato" class="nav-link">Contato</a>
+        </nav>
 
-<nav id="menu">
+        <div class="header-buttons">
+            <button id="theme-toggle" aria-label="Alternar tema">
+                <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
 
-<a href="#sobre">Sobre</a>
-<a href="#formacao">Formação</a>
-<a href="#portfolio">Portfólio</a>
-<a href="#contato">Contato</a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-</nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">Engenharia de Software</span>
+                <h1 class="hero-title">
+                    Olá, eu sou <span class="highlight">Abimael</span>
+                </h1>
+                <p class="hero-description">
+                    Desenvolvedor Web, UI/UX Designer e criador de experiências digitais. 
+                    Transformando ideias em soluções tecnológicas inovadoras.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.abimaeldev.eng.br/" target="_blank" class="btn btn-primary">
+                        <span>Visitar meu site</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                        </svg>
+                    </a>
+                    <a href="#contato" class="btn btn-secondary">
+                        Entrar em contato
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span>+
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="30">0</span>+
+                        <span class="stat-label">Clientes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span>+
+                        <span class="stat-label">Anos exp.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">abimael.dev</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">nome</span>: <span class="string">"Abimael"</span>,
+  <span class="property">stack</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>],
+  <span class="property">paixao</span>: <span class="string">"Criar experiências"</span>,
+  <span class="property">disponivel</span>: <span class="boolean">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<div class="header-buttons">
+        <section id="sobre" class="section">
+            <div class="section-header">
+                <span class="section-badge">01</span>
+                <h2 class="section-title">Sobre mim</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Meu nome é <strong>Abimael de Menezes Pedro</strong>. Sou estudante de 
+                        Engenharia de Software e desenvolvedor web apaixonado por criar 
+                        soluções digitais que fazem a diferença.
+                    </p>
+                    <p>
+                        Trabalho com criação de sites, landing pages, design digital e 
+                        marketing digital. Meu objetivo é sempre entregar projetos que 
+                        combinam estética e funcionalidade.
+                    </p>
+                    <p>
+                        Além da tecnologia, sou apaixonado por <strong>futebol</strong> e 
+                        <strong>esports</strong> — duas paixões que me ensinam sobre trabalho 
+                        em equipe e estratégia.
+                    </p>
+                    <div class="tech-stack">
+                        <h4>Tecnologias que utilizo:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <span class="initials">AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<button id="theme-toggle">🌙</button>
+        <section id="formacao" class="section">
+            <div class="section-header">
+                <span class="section-badge">02</span>
+                <h2 class="section-title">Formação</h2>
+            </div>
+            <div class="formation-grid">
+                <div class="formation-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3>Engenharia de Software</h3>
+                    <p>Bacharelado em Engenharia de Software com foco em desenvolvimento de sistemas e arquitetura de software.</p>
+                    <span class="card-badge">Em andamento</span>
+                </div>
 
-<div id="menu-toggle">
+                <div class="formation-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Técnico em Informática</h3>
+                    <p>Técnico em Informática para Internet com ênfase em desenvolvimento web e programação.</p>
+                    <span class="card-badge">Concluído</span>
+                </div>
 
-<span></span>
-<span></span>
-<span></span>
+                <div class="formation-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Experiência em design de interfaces e experiência do usuário, criando produtos digitais intuitivos.</p>
+                    <span class="card-badge">Especialização</span>
+                </div>
 
-</div>
+                <div class="formation-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Conhecimento em estratégias de marketing digital, SEO e gestão de campanhas online.</p>
+                    <span class="card-badge">Certificado</span>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <section id="portfolio" class="section">
+            <div class="section-header">
+                <span class="section-badge">03</span>
+                <h2 class="section-title">Portfólio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card featured">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Site Profissional</span>
+                        <h3>AbimaelDev.eng.br</h3>
+                        <p>Meu site profissional completo com projetos, serviços e informações de contato para clientes.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://www.abimaeldev.eng.br/" target="_blank" class="portfolio-link">
+                            Visitar projeto
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
-</header>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Landing Page</span>
+                        <h3>Landing Pages</h3>
+                        <p>Criação de páginas de vendas modernas e otimizadas para conversão.</p>
+                        <div class="portfolio-tags">
+                            <span>Design</span>
+                            <span>UX</span>
+                            <span>Conversão</span>
+                        </div>
+                    </div>
+                </div>
 
-<section class="hero">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Design</span>
+                        <h3>Design Digital</h3>
+                        <p>Criação de identidade visual, artes para redes sociais e materiais gráficos.</p>
+                        <div class="portfolio-tags">
+                            <span>Figma</span>
+                            <span>Branding</span>
+                            <span>Social</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<h2>Engenharia de Software</h2>
+        <section id="contato" class="section">
+            <div class="section-header">
+                <span class="section-badge">04</span>
+                <h2 class="section-title">Contato</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos trabalhar juntos?</h3>
+                    <p>
+                        Estou sempre aberto a novos projetos e oportunidades. 
+                        Se você tem uma ideia ou precisa de ajuda com seu projeto, 
+                        entre em contato!
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://www.abimaeldev.eng.br/" target="_blank" class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                            <span>abimaeldev.eng.br</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" placeholder="Como posso ajudar?" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Enviar mensagem</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<p>
-Desenvolvedor Web, UI/UX Designer e criador de experiências digitais.
-</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">A</span>
+                <span>AbimaelDev</span>
+            </div>
+            <p>Desenvolvido com carinho por Abimael</p>
+            <p class="footer-year">&copy; 2026 - Todos os direitos reservados</p>
+            <a href="https://www.abimaeldev.eng.br/" target="_blank" class="footer-link">
+                abimaeldev.eng.br
+            </a>
+        </div>
+    </footer>
 
-<a href="https://www.abimaeldev.eng.br/" target="_blank" class="btn">
-Visitar meu site
-</a>
-
-</section>
-
-<section id="sobre">
-
-<h2>Sobre mim</h2>
-
-<p>
-
-Meu nome é Abimael de Menezes Pedro.  
-Sou estudante de Engenharia de Software e desenvolvedor web.
-
-Trabalho com criação de sites, landing pages, design digital
-e marketing digital.
-
-Sou apaixonado por tecnologia, programação, design e também
-por futebol e esports.
-
-</p>
-
-</section>
-
-<section id="formacao">
-
-<h2>Formação</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🎓 Engenharia de Software</h3>
-<p>Bacharelado em Engenharia de Software.</p>
-</div>
-
-<div class="card">
-<h3>💻 Técnico em Informática</h3>
-<p>Técnico em Informática para Internet.</p>
-</div>
-
-<div class="card">
-<h3>🎨 Design</h3>
-<p>Experiência em UI/UX e design gráfico.</p>
-</div>
-
-<div class="card">
-<h3>📈 Marketing</h3>
-<p>Marketing digital e estratégias online.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="portfolio">
-
-<h2>Portfólio</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Meu site profissional</h3>
-<p>Projetos e serviços de desenvolvimento web.</p>
-<a href="https://www.abimaeldev.eng.br/" target="_blank">
-Acessar
-</a>
-</div>
-
-<div class="card">
-<h3>Landing Pages</h3>
-<p>Criação de páginas de vendas modernas.</p>
-</div>
-
-<div class="card">
-<h3>Design Digital</h3>
-<p>Criação de identidade visual e artes.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="contato">
-
-<h2>Contato</h2>
-
-<form id="form">
-
-<input type="text" id="nome" placeholder="Seu nome">
-
-<input type="email" id="email" placeholder="Seu email">
-
-<textarea id="mensagem" placeholder="Mensagem"></textarea>
-
-<button type="submit">Enviar mensagem</button>
-
-</form>
-
-</section>
-
-<footer>
-
-<p>© 2026 - Abimael Dev SITE OFICIAL MEU: https://www.abimaeldev.eng.br/ </p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 
 </html>
