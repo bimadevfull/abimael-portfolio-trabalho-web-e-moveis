@@ -62,7 +62,7 @@ O layout é totalmente responsivo com breakpoints em:
 
 ## Autor
 
-**Abimael de Menezes Pedro**  
+**Abimael de Menezes Pedro / https://www.abimaeldev.eng.br/**  
 Estudante de Engenharia de Software - UNINTER
 
 ## Licença
